@@ -4,8 +4,18 @@ const fs = require("fs");
 const app=express();
 const mongoose=require("mongoose");
 const bodyparser =require("body-parser");
-const PORT=process.env.PORT
-mongoose.connect('mongodb://127.0.0.1:27017/contactDance');
+require('dotenv').config(); // Load environment variables from .env file
+
+const PORT = process.env.PORT || 8000;
+const MONGODB_CONNECT_URI = process.env.MONGODB_CONNECT_URI;
+
+// Database connection
+mongoose.connect(MONGODB_CONNECT_URI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+}).then(() => console.log('Connected to MongoDB'))
+  .catch((err) => console.error('Error connecting to MongoDB', err));
+// mongoose.connect('mongodb://127.0.0.1:27017/contactDance');
 const port=8000;
 
 
