@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+
+}
+
+#logo img {
+    border-radius: 99px;
+    height: 40px;
+    margin: -5px 5px;
+}
+
+#logo {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    color: white;
+    align-items: center;
+    margin: 0 14px;
+    font-size: 15px;
+    margin-right: 24px;
+}
+
+#navbar ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#navbar li {
+    list-style: none;
+}
+
+#navbar li a {
+    text-decoration: none;
+    padding: 7px 21px;
+    color: rgb(200, 236, 244);
+    font-size: 19px;
+}
+
+#navbar {
+    background-color: #aa478f;
+    font-family: 'Cabin', sans-serif;
+    padding: 13px 14px;
+}
+
+#navbar li a:hover {
+    color: black;
+}
+
+#introSection {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 44px;
+    align-items: center;
+    background: center/cover no-repeat url("../static/bg.jpg");
+    height: 425px;
+    background-color: red;
+}
+
+#introSection div.small {
+    font-size: 40px;
+    padding: 5px;
+}
+
+#missionSection {
+    height: 300px;
+    width: 67%;
+    margin: auto;
+}
+
+#missionSection h2 {
+    font-size: 36px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    padding-top: 48px;
+}
+
+.card {
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 29%;
+    margin: 23px 22px;
+    height: 209px;
+}
+
+.card h3 {
+    text-align: center;
+    margin: 0 12px;
+    margin-top: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-img {
+    height: 120px;
+    padding: 0px 14px;
+    margin: 5px 9px;
+}
+
+.card-img img {
+    height: inherit;
+}
+
+.card-content {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#sponsorsSection {
+    height: 300px;
+    background-color: #e1dfdfc7;
+    margin-top: 79px;
+}
+
+
+#sponsorsSection h2 {
+    font-size: 36px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    padding-top: 40px;
+
+}
+#sponsors{
+    height: 120px;  
+    max-width: 707px;
+    margin: auto;
+}
+.spImage{
+    height: 80%;
+    margin: 20px;
+}
+
+#footer {
+    display: flex;
+    color: whitesmoke;
+    background-color: rgb(44, 34, 34);
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font:bold;
+}

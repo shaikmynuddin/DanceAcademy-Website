@@ -1,0 +1,56 @@
+doctype html
+html
+  head
+    title Harry Dance Academy
+    //- link(rel="stylesheet" href="../static/style.css")
+    style 
+      include ../static/style.css
+  body
+    nav#navbar
+      ul
+        div#logo
+          img(src="/static/img/logo.jpg")
+          | MDA
+        li #[a(href="/") Home]
+        li #[a(href="/") About]
+        li #[a(href="/") Contact Us]
+    section#introSection
+      div Welcome to Mynu's Dance Academy
+      div.small Eat Sleep Dance Repeat
+    section#missionSection
+      h2 Our Mission
+      div.card
+        h3 Dance Perfection
+        div.card-box
+          div.card-img
+            img(src="/static/img/logo1.png")
+          div.card-content
+            p This is the best dance academy of the universe
+
+      div.card
+        h3 Dance the way you like
+        div.card-box
+          div.card-img
+            img(src="/static/img/logo2.png")
+          div.card-content
+            p This is the best dance academy of the universe
+
+      div.card
+        h3 Expert Teaching
+        div.card-box
+          div.card-img
+            img(src="/static/img/logo3.png")
+
+          div.card-content
+            p This is the best dance academy of the universe
+    section#sponsorsSection.x
+      h2 Our Sponsors
+      div#sponsors 
+        img(src= "/static/img/yt.png", alt= "Sponsor Image", class= "spImage")
+        img(src= "/static/img/insta.png", alt= "Sponsor Image", class= "spImage")
+        img(src= "/static/img/fb.png", alt= "Sponsor Image", class= "spImage")
+        img(src= "/static/img/chil.png", alt= "Sponsor Image", class= "spImage")
+    footer#footer
+      | Copyright © 2023 MynuDanceAcademy.com | All Rights Reserved
+    script 
+      include ../static/index.js
