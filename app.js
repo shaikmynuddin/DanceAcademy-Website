@@ -49,7 +49,7 @@ app.get('/contact', (req, res)=>{
 app.post('/contact', (req, res)=>{
     var myData = new Contact(req.body)
     myData.save().then(()=>{
-        res.send("Thanks for contacting us we will be contact you ");
+        res.send("Thanks for contacting us we will be in contact wwith you later222");
     }).catch(()=>{
         res.status(400).send("Item was not saved");
     })
